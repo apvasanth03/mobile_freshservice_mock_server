@@ -1,0 +1,134 @@
+{
+  "uuid": "0a55fb98-1812-4192-b4e0-849095bc7df8",
+  "lastMigration": 32,
+  "name": "Freshservice data",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [
+    {
+      "uuid": "569dbc03-e541-4158-bc49-15bd821b413a",
+      "name": "Ticket",
+      "children": [
+        {
+          "type": "folder",
+          "uuid": "841a17b5-38a0-4d00-baa6-26ac5b82182d"
+        }
+      ]
+    },
+    {
+      "uuid": "841a17b5-38a0-4d00-baa6-26ac5b82182d",
+      "name": "Scenario Automation",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "c64bab08-48a0-4686-a567-4e241fa5bcf4"
+        },
+        {
+          "type": "route",
+          "uuid": "01c1a9e4-7721-4b54-ad95-263d9e491254"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "uuid": "c64bab08-48a0-4686-a567-4e241fa5bcf4",
+      "type": "http",
+      "documentation": "Get Scenario Automations",
+      "method": "get",
+      "endpoint": "api/_/scenario_automations",
+      "responses": [
+        {
+          "uuid": "04f4d101-1f5c-4488-95f4-1a21c543031b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "./response/ticket/scenario_automation/get_scenario_automations/success.json",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "01c1a9e4-7721-4b54-ad95-263d9e491254",
+      "type": "http",
+      "documentation": "Execute Scenario",
+      "method": "put",
+      "endpoint": "api/_/tickets/execute_scenario",
+      "responses": [
+        {
+          "uuid": "0e15332a-f611-454d-a540-1d2467b03048",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "Success",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "folder",
+      "uuid": "569dbc03-e541-4158-bc49-15bd821b413a"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

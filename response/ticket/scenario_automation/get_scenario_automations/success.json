@@ -1,0 +1,22 @@
+{
+  "scenario_automations": [
+    {
+      "id": 27000183889,
+      "created_at": "2023-06-21T06:46:29+05:30",
+      "updated_at": "2023-06-21T06:46:29+05:30",
+      "name": "Assign to HR Operations Team",
+      "description": "Cases meant for the HR Operations Team are assigned in one click",
+      "visibility": "shared",
+      "workspace_id": 3
+    },
+    {
+      "id": 27000168500,
+      "created_at": "2023-04-10T10:15:36+05:30",
+      "updated_at": "2023-04-10T10:15:36+05:30",
+      "name": "Assign to Incident Team",
+      "description": "Requester reported incidents are assigned to Incident Management Team in a single click",
+      "visibility": "shared",
+      "workspace_id": 2
+    }
+  ]
+}
