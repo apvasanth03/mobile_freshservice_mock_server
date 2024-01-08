@@ -9,3 +9,9 @@ Mock Server for Freshservice Mobile Apps (Android & iOS).
 ## Mock API Response
 
 - [Freshservice Mock API Response](./documentation/responses/fs_mock_api_response.md)
+
+## Integrating Mock Server in Client Application (Android & iOS)
+
+- [Integration in Client App](./documentation/integration/integration_in_client_app.md)
+- [Mock Server Development Workflow](./documentation/integration/development_workflow.md)
+
